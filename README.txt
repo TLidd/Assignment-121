@@ -3,3 +3,5 @@ Press the play button to start. The player rotates by using the mouse and the mo
 
 https://assetstore.unity.com/packages/3d/animations/warrior-pack-bundle-2-free-42454
 Used the warrior-pack-bundle 2, free version to complete the assignment with the warrior being the animated character.
+
+Title Screen that starts the scene and returns to it after every pickup is collected.
