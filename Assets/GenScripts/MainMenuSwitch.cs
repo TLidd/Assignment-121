@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneSwitch : MonoBehaviour
+public class MainMenuSwitch : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -15,9 +15,11 @@ public class SceneSwitch : MonoBehaviour
     void Update()
     {
         //Debug.Log("IS Not");
-        if(Input.GetKeyDown("space")){
+        if(Pickups.Score == 8){
             //Debug.Log("IS DOWN");
-            SceneManager.LoadScene("Scene1");
+            Pickups.Score = 0;
+            SceneManager.LoadScene("MainMenu");
+            SceneManager.UnloadScene("Scene1");
         }
     }
 }
